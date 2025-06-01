@@ -68,3 +68,9 @@ Further investigate other factors that may improve reporting and explain the pre
 - Track changes over time
 - Explore other factors that may affect the MDD prevalence
 - Include data about existing mental health care services and budget
+
+# References
+
+- Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2019 (GBD 2019) Results. Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2020. Available at: http://ghdx.healthdata.org/gbd-results-tool
+
+- World Bank. World Development Indicators. GDP per capita (current US$). Available at: https://data.worldbank.org/indicator/NY.GDP.PCAP.CD
