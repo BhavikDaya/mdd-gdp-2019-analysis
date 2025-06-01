@@ -31,7 +31,7 @@ Using cor.test() with the Pearson method, a correlation coefficient of -0.63 was
 Notable outliers included South Korea, Ukraine, Brazil, Portugal, New Zealand and Saudi Arabia. 
 
 <p align = "center">
-  <img src = "scatterplot.png">
+  <img src = "/plots/scatterplot.png">
 </p>
 
 Additionally, the data was imported into Tableau and a dashboard was created to visualise and categorise countries based on their GDP per capita and MDD prevalences. 
