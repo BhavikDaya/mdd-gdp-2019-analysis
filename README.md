@@ -4,7 +4,7 @@
 
 Major Depressive Disorder (MDD) is a critical public health concern globally. Understanding how economic prosperity relates to depression can inform policymakers, healthcare workers and researchers about potential areas for intervention and resource allocation. 
 
-This analysis investigates links between national wealth - measured by Gross Domestic Product (GDP) per capita -  and MDD prevalence across countries in 2019. Data from the Institute for Health Metrics and Evaluation (IHME) and the World Bank will be utilised. The strength and statistical significance of the correlation will be calculated using the Pearson correlation coefficient. 
+This analysis investigates links between national wealth - measured by Gross Domestic Product (GDP) per capita -  and MDD prevalence across countries in 2019. Data from the Institute for Health Metrics and Evaluation (IHME) and the World Bank will be utilised. The strength and statistical significance of the correlation will be calculated using the Pearson correlation coefficient, a common method used to determine the strength of the relationship between two variables. 
 
 ---
 ## Data Preparation
@@ -17,12 +17,14 @@ The data is stored securely in a Github respository and are used under open lice
 
 The data sources are reputable and highly credible, being used in research settings. Whilst the data is not current and may contain reporting biases, the data generally meets ROCCC standards.
 
+---
 ## Data Processing
 
 The CSV files were imported into Google Sheets for cleaning, which included trimming white space, removing duplicated, omitted blank data, filtering by the year 2019, harmonising country names, ensuring correct data types and making column names lowercase. A histogram was created which showed no improbable outliers. The exported files were then imported into BigQuery and a Left Join was used to identify two countries that were not present in the World Bank data - Timor Leste and Vatican City. These two countries were then omitted from the analysis. The tables were then joined with an inner join based on country name and a single table with country name, MDD prevalence and GDP per capita for the year 2019 was exported into Posit Cloud for data analysis in R (as per the Google Data Analytics Certificate).
 
 A data cleaning log has been uploaded to this repository. 
 
+---
 ## Data Analysis
 
 Having been imported into Posit Cloud for analysis, a scatterplot was chosen to best represent the relationship between GDP per capita and MDD prevalence per country. R libraries such as ggplot2 and dplyr were used to plot GDP per capita in USD (independent variable) on the x axis and MDD prevalence on the y axis as the dependent variable. An appropriately-labelled scatterplot was generated and a regression line was added, which showed a moderate negative correlation. A lower GDP per capita correlated with a higher MDD prevalence and a higher GDP per capita correlated with a lower MDD prevalence. As such, countries such as Malawi, the CAR, Chad and South Sudan had high prevalences of MDD whilst countries such as Japan, the USA, the Netherlands and Iceland had lower prevalences of MDD. 
@@ -41,6 +43,7 @@ Additionally, the data was imported into Tableau and a dashboard was created to 
   <img src = "/plots/dashboard.png">
 </p>
 
+---
 ## Key Takeaways
 
 This analysis explored the global relationship between GDP per capita and MDD prevalence in 2019. Whilst a statistically significant negative correlation of -0.63 was seen - suggesting that a higher GDP per capita is associated with a lower prevalence of MDD - the relationship is modest and is likely influenced my numerous confounding factors. 
@@ -49,27 +52,31 @@ Moreover, the correlation does not imply a causal relationship and the collected
 
 Numerous other factors such as access to mental health services, availability of such services, income inequality, education, unemployment, stigma, substance use, urbanisation, substance policies, housing and service delivery are likely important factors to explore. Additionally, this analysis does not track changes over time. 
 
+---
 ## Recommendations
 
 These findings could assist policymakers, healthcare workers and researchers in providing interventions in countries with high economic prosperity and high comorbid MDD prevalences. Conversely, relatively poor countries would benefit from improved healthcare access and awareness campaigns. 
 
+---
 ## Steps for Stakeholders
 
-### Healthcare workers
+#### Healthcare workers
 Focus on improving access to mental health services in underresourced areas. 
 
-### Policymakers
+#### Policymakers
 Avoid relying solely on economic propsrity to determine resource allocation. 
 
-### Researchers
+#### Researchers
 Further investigate other factors that may improve reporting and explain the prevalences of MDD in each country.
 
+---
 ## Future enhancement
 
 - Track changes over time
 - Explore other factors that may affect the MDD prevalence
 - Include data about existing mental health care services and budget
 
+---
 # References
 
 - Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2019 (GBD 2019) Results. Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2020. Available at: http://ghdx.healthdata.org/gbd-results-tool
