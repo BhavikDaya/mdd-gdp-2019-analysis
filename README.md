@@ -6,6 +6,7 @@ Major Depressive Disorder (MDD) is a critical public health concern globally. Un
 
 This analysis investigates links between national wealth - measured by Gross Domestic Product (GDP) per capita -  and MDD prevalence across countries in 2019. Data from the Institute for Health Metrics and Evaluation (IHME) and the World Bank will be utilised. The strength and statistical significance of the correlation will be calculated using the Pearson correlation coefficient. 
 
+---
 ## Data Preparation
 
 Data from three reputable organisations; namely, the [IHME](https://ourworldindata.org/grapher/depressive-disorders-prevalence-vs-gdp-per-capita) for MDD prevalence and [World Bank](https://data.worldbank.org/indicator/NY.GDP.PCAP.CD) for GDP per capita, was sourced through their publically-accessible websites. 
