@@ -1,0 +1,6 @@
+SELECT countries.country, countries.mdd_prevalence, factors.gdp_per_capita
+FROM resume-aiq77i.Global_depression_prevalence_and_economic_factors_2019.countries AS countries
+LEFT JOIN resume-aiq77i.Global_depression_prevalence_and_economic_factors_2019.factors AS factors
+ON countries.country = factors.country
+WHERE countries.country != 'Vatican City' AND countries.country != 'Timor Leste'
+ORDER BY countries.country

@@ -1,0 +1,12 @@
+31 May 2025:
+- Imported dataset pertaining the prevalence of MDD by country in 2019 from Global Burden of Disease Study 2019 (GBD 2019) by the Institute for Health Metrics and Evaluation (IHME).
+- Imported data about the risk factors from GDP per Capita: Source: World Bank Open Data World Bank GDP per capita (current US$) for 2019
+- Separated both sets on commas, all data types corrected
+- White space trimmed and duplicates removed and column names changed to lower cases and underscores added
+- Uploaded both to BigQuery and used SQL left join to determine which two countries did not have factors data - Timor Leste and Vatican city. Both deleted from data set. 
+- Then exported as a CSV
+- Uploaded to positCloud
+- Installed ggplot2, dplyr and ggrepel and loaded the libraries
+- Did a header test, view and summary
+- Checked for missing values
+- Plotted 
