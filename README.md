@@ -37,7 +37,7 @@ Notable outliers included South Korea, Ukraine, Brazil, Portugal, New Zealand an
 Additionally, the data was imported into Tableau and a dashboard was created to visualise and categorise countries based on their GDP per capita and MDD prevalences. 
 [View it interactively here](https://public.tableau.com/app/profile/bhavik.daya/viz/GlobalPatternsofDepressionandWealthAnalyzingMDDPrevalenceAgainstGDP/Sheet1#1)
 <p align = "center">
-  <img src = "dashboard.png">
+  <img src = "/plots/dashboard.png">
 </p>
 
 ## Key Takeaways
